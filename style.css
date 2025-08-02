@@ -45,7 +45,7 @@ body{
 
 /* === Hamburger Menu Icon (Hidden on Desktop) === */
 #menu-icon{
-    font-size: 3.5rem;
+    font-size: clamp(1.6rem, 2vw, 3rem);;
     color: var(--main-color);
     display: none;
 }
@@ -139,6 +139,7 @@ section{
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
+
 }
 
 .home-content h3{
@@ -235,10 +236,11 @@ section{
     background: var(--second-bg-color);
 }
 
+
 /* === About Image === */
 .about-img img {
-    width: 32vw;
-    height: 32vw; /* Ensure height is equal to width */
+    width: 30vw;
+    height: 30vw; /* Ensure height is equal to width */
     object-fit: cover; /* Ensures image fills the circle */
     border-radius: 50%; /* This makes it round */
     box-shadow: 0 0 25px var(--main-color);
@@ -403,6 +405,8 @@ section{
     font-size: 1.6rem;
 }
 
+
+
 /* === Contact Section === */
 .contact{
     background-color:var(--bg-color) ;
@@ -480,6 +484,7 @@ section{
 /* === Responsive Styles (Mobile View) === */
 @media(max-width:1258px){
 
+
     /* === Show Menu Icon === */
     #menu-icon{
         display: block;
@@ -542,12 +547,13 @@ section{
         margin: 2rem 0;
     }
 
-    .about img{
-        width: 52vw;
-    }
+    /*.about img{
+        width: 52vw;*/
+        
+}
 
     /* === Stack Contact Form Inputs Vertically === */
     .contact form{
         flex-direction: column;
     }
-}
+
